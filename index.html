@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zh-CN">
+<html class="no-js" lang="zh-CN" ng-app="taobao">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,8 +33,8 @@
                     <div class="right">
                         <ul class="toollist clearfix">
                             <li>
-                                <a href="#"><i class="fa fa-shopping-cart fa-mr"></i>我的淘宝<i class="fa fa-angle-down fa-ml hover-rotate"></i></a>
-                                <div class="drpd">
+                                <a href="#">我的淘宝<i class="fa fa-angle-down fa-ml hover-rotate"></i></a>
+                                <div drpd drpd-type="list">
                                     <ul>
                                         <li><a href="#">已买到的宝贝</a></li>
                                         <li><a href="#">我的足迹</a></li>
@@ -42,15 +42,33 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">购物车<i class="fa fa-angle-down fa-ml hover-rotate"></i></a>
+                                <a href="#"><i class="fa fa-shopping-cart fa-mr"></i>购物车<i class="fa fa-angle-down fa-ml hover-rotate"></i></a>
+                                <div drpd drpd-type="cart">
+                                    <span>您购物车里还没有任何宝贝。</span> 
+                                    <tb-btn tb-btn-type="primary">查看我的购物车</tb-btn>
+                                </div>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-star fa-mr"></i>收藏夹<i class="fa fa-angle-down fa-ml hover-rotate"></i></a>
+                                <div drpd drpd-type="list">
+                                    <ul>
+                                        <li><a href="#">收藏的宝贝</a></li>
+                                        <li><a href="#">收藏的店铺</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li><span class="v-divider"></span></li>
                             <li><a href="#">商品分类</a></li>
                             <li>
                                 <a href="#">卖家中心<i class="fa fa-angle-down fa-ml hover-rotate"></i></a>
+                                <div drpd drpd-type="list">
+                                    <ul>
+                                        <li><a href="#">已卖出的宝贝</a></li>
+                                        <li><a href="#">出售中的宝贝</a></li>
+                                        <li><a href="#">卖家服务中心</a></li>
+                                        <li><a href="#">卖家培训中心</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li><a href="#">联系客服</a></li>
                             <li>
@@ -63,6 +81,9 @@
 
         </header>
 
+
+        <!-- javascript -->
+        <script src="http://cdn.staticfile.org/angular.js/1.2.0rc3/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>

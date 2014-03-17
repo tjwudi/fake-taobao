@@ -1932,6 +1932,19 @@ a:hover {
   width: 1190px;
   margin: auto;
 }
+[class*='taobao-button-'] {
+  background: none;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+.taobao-button-primary {
+  background-color: #ff4400;
+}
+.taobao-button-primary * {
+  color: white;
+}
 header.gl-header {
   position: fixed;
   top: 0;
@@ -2004,25 +2017,27 @@ header.gl-header {
   color: #ff4400;
 }
 #stoolbar .drpd {
-  display: none;
   background-color: white;
   position: absolute;
   min-width: 120px;
+  white-space: nowrap;
+  /* 防止随便换行 */
+
   border: 1px solid #e2e2e2;
 }
-#stoolbar .drpd ul {
+#stoolbar .drpd.drpd-list ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-#stoolbar .drpd ul li a:hover {
+#stoolbar .drpd.drpd-list ul li a:hover {
   background-color: whitesmoke;
 }
-#stoolbar .drpd ul li a {
+#stoolbar .drpd.drpd-list ul li a {
   padding: 0;
   margin: 0;
   text-indent: 5px;
 }
-#stoolbar .drpd.visible {
-  display: block;
+#stoolbar .drpd.drpd-cart {
+  padding: 10px;
 }
