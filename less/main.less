@@ -1,7 +1,7 @@
 @import "normalize";
 @import "h5bp";
-@import "variables";
 @import "mixin";
+@import "variables";
 @import "font-awesome";
 @import "components/container";
 @import "components/taobao-button";
@@ -55,6 +55,9 @@ header.gl-header {
         background-color: white;
         i.hover-rotate {
           .transform(rotate(180deg));
+        }
+        i {
+          .transform(rotate(0deg));
           .transform-origin(50%, 50%);
           .transition(all 0.2s linear);
         }
@@ -80,7 +83,7 @@ header.gl-header {
     background-color: white;
     position: absolute;
     min-width: 120px;
-    white-space: nowrap; /* 防止随便换行 */
+    white-space: nowrap; /* 防止内容换行 */
     border: 1px solid @general-border-color;
 
     &.drpd-list ul {

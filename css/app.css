@@ -2001,6 +2001,12 @@ header.gl-header {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+#stoolbar ul.toollist > li a:hover i {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -2027,7 +2033,7 @@ header.gl-header {
   position: absolute;
   min-width: 120px;
   white-space: nowrap;
-  /* 防止随便换行 */
+  /* 防止内容换行 */
 
   border: 1px solid #e2e2e2;
 }
