@@ -1945,6 +1945,12 @@ a:hover {
 .taobao-button-primary * {
   color: white;
 }
+.tb-red {
+  color: #ff4400;
+}
+* {
+  font-family: arial, sans-serif;
+}
 header.gl-header {
   position: fixed;
   top: 0;
